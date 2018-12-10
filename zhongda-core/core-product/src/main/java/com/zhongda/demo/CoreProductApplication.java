@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ZhongdaAdminApplication {
+public class CoreProductApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ZhongdaAdminApplication.class, args);
+		SpringApplication.run(CoreProductApplication.class, args);
 	}
 }
