@@ -1,0 +1,19 @@
+#公共配置
+server:
+  servlet:
+    context-path: /sys
+
+spring: 
+  application:
+    name: sys
+
+    #默认激活哪一个环境的配置文件
+  profiles:
+    active: test
+---     
+spring:
+  profiles: dev 
+---  
+spring:
+  profiles: test   
+ 

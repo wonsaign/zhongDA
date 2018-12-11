@@ -1,12 +1,12 @@
-package com.zhongda.demo;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class CoreUtilApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(CoreUtilApplication.class, args);
-	}
-}
+//package com.zhongda.demo;
+//
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+//
+//@SpringBootApplication
+//public class CoreUtilApplication {
+//
+//	public static void main(String[] args) {
+//		SpringApplication.run(CoreUtilApplication.class, args);
+//	}
+//}
