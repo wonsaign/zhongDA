@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Select;
 
-import com.zhongda.common.BaseMapper;
+import com.zhongda.kernel.dao.BaseMapper;
 import com.zhongda.sys.entity.DirtyWords;	
 
 

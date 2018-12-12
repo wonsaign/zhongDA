@@ -3,57 +3,32 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>zhongda-core</groupId>
-	<artifactId>core</artifactId>
-	<packaging>pom</packaging>
+	<groupId>core-framework</groupId>
+	<artifactId>core-union</artifactId>
+	<packaging>jar</packaging>
 
-	<name>zhongda-core</name>
-	<description>core</description>
+	<name>core-union</name>
+	<description>union</description>
 
-  	<parent>
-		<groupId>zhongda-framework</groupId>
-		<artifactId>framework</artifactId>
+	<parent>
+		<groupId>zhongda-core</groupId>
+		<artifactId>core</artifactId>
 		<version>1.0.0</version>
-	</parent> 
-	<modules>
-		<module>core-order</module>
-        <module>core-sys</module>
-        <module>core-product</module>
-        <module>core-util</module>
-        <module>core-kernel</module>
-        <module>core-union</module>
-	</modules>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		
-		<dom4j.version>1.6.1</dom4j.version>
-		<fasterxml.version>2.9.2</fasterxml.version>
-		<slf4j.version>1.7.25</slf4j.version>
-		<fastjson.version>1.2.47</fastjson.version>
-		<logback.version>1.2.3</logback.version>
-	</properties>
+	</parent>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>2.1.0.RELEASE</version>
-				<!-- <version>2.0.1.RELEASE</version> -->
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>	
-	
 	<build>
 		<plugins>
 			<plugin>

@@ -1,4 +1,4 @@
-package com.zhongda.core.entity;
+package com.zhongda.kernel.entity;
 
 import java.io.Serializable;
 

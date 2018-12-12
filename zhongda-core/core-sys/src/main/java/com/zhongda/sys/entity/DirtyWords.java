@@ -2,9 +2,8 @@ package com.zhongda.sys.entity;
 
 import javax.persistence.Table;
 
-import com.zhongda.core.entity.IEntity;
+import com.zhongda.kernel.entity.IEntity;
 
-//import com.zhongda.core.entity.IEntity;
 
 @Table(name="dic_dirtywords")
 public class DirtyWords implements IEntity{

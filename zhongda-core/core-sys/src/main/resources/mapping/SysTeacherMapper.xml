@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhongda.sys.dao.SysTeacherMapper">
+  <resultMap id="BaseResultMap" type="com.zhongda.sys.entity.SysTeacher">
+    <id column="Id" jdbcType="CHAR" property="id" />
+    <result column="Head" jdbcType="VARCHAR" property="head" />
+    <result column="Name" jdbcType="VARCHAR" property="name" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="Status" jdbcType="TINYINT" property="status" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createtime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.zhongda.sys.entity.SysTeacherWithBLOBs">
+    <result column="Intro" jdbcType="CLOB" property="intro" />
+    <result column="SysClassIds" jdbcType="CLOB" property="sysclassids" />
+  </resultMap>
+</mapper>
